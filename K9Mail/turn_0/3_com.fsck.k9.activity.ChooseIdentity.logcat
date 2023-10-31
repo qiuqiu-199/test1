@@ -1,0 +1,25 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: Process: com.fsck.k9, PID: 5109
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.fsck.k9/com.fsck.k9.activity.ChooseIdentity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.fsck.k9.Account.getIdentities()' on a null object reference
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.fsck.k9.Account.getIdentities()' on a null object reference
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at com.fsck.k9.activity.ChooseIdentity.refreshView(Unknown Source:13)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at com.fsck.k9.activity.ChooseIdentity.onResume(Unknown Source:3)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+10-21 11:10:45.261  5109  5109 E AndroidRuntime: 	... 11 more

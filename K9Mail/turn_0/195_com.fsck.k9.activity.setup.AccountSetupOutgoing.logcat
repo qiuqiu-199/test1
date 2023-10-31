@@ -1,0 +1,25 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: Process: com.fsck.k9, PID: 5030
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.fsck.k9/com.fsck.k9.activity.setup.AccountSetupOutgoing}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.fsck.k9.Account.getStoreUri()' on a null object reference
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.fsck.k9.Account.getStoreUri()' on a null object reference
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at com.fsck.k9.activity.setup.AccountSetupOutgoing.onCreate(Unknown Source:69)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+10-21 12:08:09.486  5030  5030 E AndroidRuntime: 	... 11 more

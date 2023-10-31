@@ -1,0 +1,49 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: Process: com.fsck.k9, PID: 5377
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.fsck.k9/com.fsck.k9.activity.EmailAddressList}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.fsck.k9.MySerializable)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.fsck.k9.MySerializable)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Bundle.getSerializable(Bundle.java:1034)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.content.Intent.getSerializableExtra(Intent.java:7516)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at com.fsck.k9.activity.EmailAddressList.onCreate(Unknown Source:15)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	... 11 more
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.fsck.k9.MySerializable
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	... 23 more
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.fsck.k9.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.fsck.k9-1C7D0NGncLEsPSjLeBtqLQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.fsck.k9-1C7D0NGncLEsPSjLeBtqLQ==/lib/x86_64, /system/fake-libs64, /data/app/com.fsck.k9-1C7D0NGncLEsPSjLeBtqLQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-21 11:11:53.953  5377  5377 E AndroidRuntime: 	... 32 more
